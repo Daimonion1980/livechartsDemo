@@ -14,9 +14,9 @@
                   AutoGenerateColumns="False"
                   HeadersVisibility="Column">
             <DataGrid.Columns>
-                <DataGridCheckBoxColumn Binding="{Binding IsSelected, UpdateSourceTrigger=PropertyChanged}" />
-                <DataGridTextColumn Header="Id" Binding="{Binding Id}" />
-                <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
+                <DataGridCheckBoxColumn Binding="{Binding IsSelected, UpdateSourceTrigger=PropertyChanged}" Width="50"/>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" IsReadOnly="True" Width="50"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" IsReadOnly="True" Width="100"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
