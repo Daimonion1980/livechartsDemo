@@ -34,6 +34,10 @@ namespace WpfApp5
                     //Workaround. Only Remove from the End of the list.
                     YAxes.RemoveAt(YAxes.Count - 1);
                 }
+                if (PlotData.Count == 0)
+                {
+                    XAxes.Clear();
+                }
             }
             else
             {
