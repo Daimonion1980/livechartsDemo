@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.ObjectModel;
 
 namespace WpfApp5
 {
@@ -23,7 +24,7 @@ namespace WpfApp5
 
         void RowSelected()
         {
-            EventAggregator.Publish(new RowSelectedEvent(Record, Name, Id, IsSelected));
+            EventAggregator.Publish(new RowSelectedEvent((IReadOnlyCollection<int>)Record, Name, Id, IsSelected)); //for testing purposes implicit cast is ok. 
         }
 
         public async Task GenerateRandomData(CancellationToken cancellationToken = default)
