@@ -1,0 +1,21 @@
+{
+  "solution": "livechartsClearPlot.sln",
+  "solutionFolder": null,
+  "mappings": {
+    "LiveChartsCore": "../LiveCharts2/src/LiveChartsCore/LiveChartsCore.csproj",
+    "LiveChartsCore.SkiaSharpView": "../LiveCharts2/src/skiasharp/LiveChartsCore.SkiaSharp/LiveChartsCore.SkiaSharpView.csproj",
+    "LiveChartsCore.SkiaSharpView.WPF": "../LiveCharts2/src/skiasharp/LiveChartsCore.SkiaSharp.WPF/LiveChartsCore.SkiaSharpView.WPF.csproj"
+  },
+  "restore": [
+    {
+      "name": "WpfApp5",
+      "packages": [
+        {
+          "packageName": "LiveChartsCore.SkiaSharpView.WPF",
+          "version": "2.0.0-rc2"
+        }
+      ]
+    }
+  ],
+  "removeProjects": true
+}
